@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>双飞翼布局</title>
+	<style type="text/css">
+	    *{
+	    	margin: 0;
+	    	padding: 0;
+	    }
+	    .container {
+	    	overflow: hidden;
+	    }
+		.container div{
+           float: left;
+            height: 400px;
+		}
+		.left {
+			width: 200px;
+			background: lightgray;
+			margin-left: -100%;
+		}
+		.right {
+			width: 200px;
+			background: lightgreen;
+			margin-left: -200px;
+		}
+		.content-father {
+			background: blue;
+			width: 100%;
+		}
+		.content {
+			margin: 0 200px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+   <div class="content-father">
+   	<div class="content">
+		这里是中间的box
+	</div>
+   </div>
+	<div class="left">
+		这里是左边的box
+	</div>	
+	<div class="right">
+		这里是右边的box
+	</div>		
+</div>
+
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

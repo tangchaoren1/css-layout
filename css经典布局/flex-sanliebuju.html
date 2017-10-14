@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flex实现三列布局</title>
+	<style type="text/css">
+        .container {
+        	display: flex;
+        } 
+        .container div {
+        	min-height: 400px;
+        }
+        .left {
+            flex-basis: 200px;
+        	background: blue;
+        }
+        .right {
+        	flex-basis: 200px;
+        	background: lightgreen;
+        }
+        .main {
+        	background: lightgray;
+        	flex:1;
+        } 
+	</style>
+</head>
+<body>
+<div class="container">
+  <div class="left">
+  	这里是左边
+  </div>
+  <div class="main">
+  	这里是中间
+  </div>
+  <div class="right">
+  	这里是右边
+  </div>
+</div>
+<script type="text/javascript">
+      	
+</script>
+</body>
+</html>
